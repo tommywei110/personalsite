@@ -1,0 +1,20 @@
+<nav
+  class="justify-center p-4 text-black font-semibold flex flex-col 
+    sm:flex-row sm:justify-between sm:items-center">
+  <div class="flex justify-between capitalize">
+    <h3 class="font-extrabold">
+      Tommy
+    </h3>
+
+    <button class="font-extrabold sm:hidden hover:text-red-400" (click)="toggleMobileMenu()">
+      X
+    </button>
+  </div>
+  <ul class="flex-col items-center {{showMobileMenu}} sm:flex sm:flex-row">
+    <li *ngFor='let pair of publicItems' class="my-1 sm:mx-1">
+      <a class="hover:text-red-400" href="{{pair[1]}}">
+        {{pair[0]}}
+      </a>
+    </li>
+  </ul>
+</nav>
