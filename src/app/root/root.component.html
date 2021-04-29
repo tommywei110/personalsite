@@ -1,25 +1,28 @@
 <div class="flex flex-col items-center mt-4 text-lg">
   <section id='Info'>
-    <div class="flex flex-col justify-center items-center sm:flex-row sm:space-x-16">
+    <div class="flex flex-col justify-center items-center sm:flex-row sm:space-x-10">
       <img class="w-3/4 max-w-sm" src="{{assetRoot}}/root/me.png">
       <div class="flex flex-col items-center justify-start">
         <p>
           Hi there.
         </p>
         <p>
-          My name is Tommy.
+          My name is Tommy Wei.
         </p>
         <p class="text-center">
-          I write code, <br> play guitar, <br> cook GOOD food.
+          I write code, <br> play guitar, <br>and cook GOOD food. 
+          <br> I studied <em class="font-bold">Computer Science @ UC Berkeley</em>
+          <br> You can find my <a href="{{assetRoot}}/root/resume.pdf"><u>resume here</u>.</a>
         </p>
       </div>
     </div>
   </section>
 
+  <hr class="mt-10 w-4/5 mx-4">
   
-  <section class="mt-8" id='Projects'>
+  <section class="mt-10" id='Fun'>
     <div class="flex items-center justify-center">
-      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
 
         <!-- 1 card -->
         <div class="relative bg-white py-6 px-6 rounded-3xl w-64 my-4 shadow-xl">
@@ -31,10 +34,9 @@
             </svg>
           </div>
           <div class="mt-8">
-            <p class="text-xl font-semibold my-2">Personal Website</p>
+            <a class="text-xl font-semibold my-2" href="https://github.com/tommywei110/personalsite"><u>Personal Website</u></a>
             <div class="flex flex-col space-y-2 text-gray-400 text-sm mb-2">
-              <p>Persoanl Website built with Angular, Tailwindcss. </p>
-              <p>The goal is to expand, build a blog and try out new technologies.</p>
+              <p>Honestly, building website is kinda fun. Try out new technologies here.</p> 
             </div>
             <div class="border-t-2 "></div>
         
@@ -42,8 +44,8 @@
               <div class="my-2">
                 <p class="font-semibold text-base mb-2">Technologies</p>
                 <div class="flex-rol flex-wrap space-x-2">
-                  <a href="https://angular.io/">Angular</a>
-                  <a href="https://tailwindcss.com/">Tailwindcss</a>
+                  <a href="https://angular.io/"><u>Angular</u></a>
+                  <a href="https://tailwindcss.com/"><u>Tailwindcss</u></a>
                 </div>
               </div>
             </div>
@@ -73,46 +75,11 @@
             </svg>
           </div>
           <div class="mt-8">
-            <p class="text-xl font-semibold my-2">This Website</p>
-            <div class="flex space-x-2 text-gray-400 text-sm">
-              <!-- svg  -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
-              <p>Marketing Team</p>
-            </div>
-            <div class="flex space-x-2 text-gray-400 text-sm my-3">
-              <!-- svg  -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-              <p>1 Weeks Left</p>
-            </div>
-            <div class="border-t-2"></div>
-    
-            <div class="flex justify-between">
-              <div class="my-2">
-                <p class="font-semibold text-base mb-2">Team Member</p>
-                <div class="flex space-x-2">
-                  <img
-                    src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                    class="w-6 h-6 rounded-full" />
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Woman_7.jpg" class="w-6 h-6 rounded-full" />
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxSqK0tVELGWDYAiUY1oRrfnGJCKSKv95OGUtm9eKG9HQLn769YDujQi1QFat32xl-BiY&usqp=CAU"
-                    class="w-6 h-6 rounded-full" />
-                </div>
-              </div>
-              <div class="my-2">
-                <p class="font-semibold text-base mb-2">Progress</p>
-                <div class="text-base text-gray-400 font-semibold">
-                  <p>34%</p>
-                </div>
-              </div>
+            <a class="text-xl font-semibold my-2" routerLink='/photos'><u>Photography</u></a>
+            <div class="flex mt-6 text-gray-400 text-sm">
+              <p>I went from Nikon D750 to <a href="https://fujifilm-x.com/global/products/cameras/x100v/"><u>Fuji X100V</u> </a> so I'd actually take my camera out.
+                <br>You can check out my photos <a routerLink='photos'><u>here</u></a>.
+              </p>
             </div>
           </div>
         </div>
@@ -121,30 +88,91 @@
         <div class="relative bg-white py-6 px-6 rounded-3xl w-64 my-4 shadow-xl">
           <div class=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-blue-500 left-4 -top-6">
             <!-- svg  -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            <svg class="h-7 w-7 fill-current" viewBox="0 10 320 320" xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <g>
+                  <path d="M320.973,200.981c-0.8-18.4-4-38.8-8.8-58c-4.8-18.4-10.8-35.6-18-48.8c-28-49.2-58.4-41.6-94.8-32
+            			c-11.6,2.8-24,6-36.8,7.2h-4c-12.8-1.2-25.2-4.4-36.8-7.2c-36.4-9.2-66.8-17.2-94.8,32.4c-7.2,13.2-13.6,30.4-18,48.8
+            			c-4.8,19.2-8,39.6-8.8,58c-0.8,20.4,1.2,35.2,5.6,45.6c4.4,9.6,10.8,15.6,19.2,18c7.6,2,16.4,1.2,25.6-2.8
+            			c15.6-6.4,33.6-20,51.2-36.4c12.4-12,35.6-18,58.8-18s46.4,6,58.8,18c17.6,16.4,35.6,30,51.2,36.4c9.2,3.6,18,4.8,25.6,2.8
+            			c8-2.4,14.8-8,19.2-18.4C319.773,236.581,321.773,221.781,320.973,200.981z M301.773,240.981c-2.4,5.6-5.6,8.8-9.6,10
+            			c-4.4,1.2-10,0.4-16.4-2c-14-5.6-30.4-18-46.4-33.2c-15.2-15.2-42-22.8-68.8-22.8s-53.6,7.6-69.2,22c-16.4,15.2-32.8,28-46.4,33.2
+            			c-6.4,2.4-12,3.6-16.4,2c-4-1.2-7.2-4.4-9.6-10c-3.2-7.6-4.8-20-4-38.4c0.8-17.2,3.6-36.8,8.4-55.2c4.4-17.2,10-33.2,16.8-45.2
+            			c22-39.6,47.6-33.2,78-25.2c12.4,3.2,25.2,6.4,39.2,7.6c0.4,0,0.4,0,0.8,0h4.4c0.4,0,0.4,0,0.8,0c14.4-1.2,27.2-4.4,39.6-7.6
+            			c30.4-7.6,56-14.4,78,25.2c6.8,12,12.4,27.6,16.8,45.2c4.4,18.4,7.6,37.6,8.4,55.2
+            			C306.973,220.181,305.373,232.581,301.773,240.981z" />
+                </g>
+              </g>
+              <g>
+                <g>
+                  <path d="M123.773,122.981c-4-3.6-8.8-6.4-14.4-6.8c-0.4-5.2-2.8-10.4-6.4-14l-0.4-0.4c-4.4-4.4-10-6.8-16.4-6.8
+            			c-6.4,0-12.4,2.8-16.4,6.8c-3.6,3.6-6.4,8.8-6.8,14.4c-5.6,0.4-10.4,2.8-14.4,6.4l-0.4,0.4c-4.4,4.4-6.8,10-6.8,16.4
+            			c0,6.4,2.8,12.4,6.8,16.4c4,4,8.8,6.4,14.8,6.8c0.4,5.6,2.8,10.8,6.8,14.4c4.4,4.4,10,6.8,16.4,6.8c6.4,0,12.4-2.8,16.4-6.8
+            			c3.6-4,6.4-8.8,6.8-14.4c5.6-0.4,10.8-2.8,14.4-6.8c4.4-4.4,6.8-10,6.8-16.4C130.573,132.981,127.773,126.981,123.773,122.981z
+            			 M113.773,145.381c-1.6,1.6-3.6,2.4-6,2.4h-5.6c-4,0-7.6,3.2-7.6,7.6v5.2c0,2.4-0.8,4.4-2.4,6c-1.6,1.6-3.6,2.4-6,2.4
+            			c-2.4,0-4.4-0.8-6-2.4c-1.6-1.6-2.4-3.6-2.4-6v-5.6c0-4-3.2-7.6-7.6-7.6h-5.6c-2.4,0-4.4-0.8-6-2.4c-1.2-1.2-2.4-3.2-2.4-5.6
+            			c0-2.4,0.8-4.4,2.4-6c0,0,0,0,0.4-0.4c1.6-1.2,3.6-2,5.6-2h5.6c4,0,7.6-3.2,7.6-7.6v-5.6c0-2.4,0.8-4.4,2.4-6
+            			c1.6-1.6,3.6-2.4,6-2.4c2.4,0,4.4,0.8,6,2.4c0,0,0,0,0.4,0.4c1.2,1.6,2,3.6,2,5.6v5.6c0,4,3.2,7.6,7.6,7.6h5.6
+            			c2.4,0,4.4,0.8,6,2.4c1.6,1.6,2.4,3.6,2.4,6C116.173,141.781,115.373,143.781,113.773,145.381z" />
+                </g>
+              </g>
+              <g>
+                <g>
+                  <circle cx="230.173" cy="110.981" r="14" />
+                </g>
+              </g>
+              <g>
+                <g>
+                  <circle cx="230.173" cy="167.781" r="14" />
+                </g>
+              </g>
+              <g>
+                <g>
+                  <circle cx="201.773" cy="139.381" r="14" />
+                </g>
+              </g>
+              <g>
+                <g>
+                  <circle cx="258.573" cy="139.381" r="14" />
+                </g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
             </svg>
+
           </div>
           <div class="mt-8">
-            <p class="text-xl font-semibold my-2">Leading Page</p>
+            <p class="text-xl font-semibold my-2">Gaming</p>
             <div class="flex space-x-2 text-gray-400 text-sm">
-              <!-- svg  -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
-              <p>Marketing Team</p>
-            </div>
-            <div class="flex space-x-2 text-gray-400 text-sm my-3">
-              <!-- svg  -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-              <p>2 Days Left</p>
+              <p>I play FPS </p>
             </div>
             <div class="border-t-2 "></div>
     
@@ -227,7 +255,9 @@
     </div>
   </section>
   
-  <section class="mt-8" id='Contact'>
+  <hr class="mt-10 w-4/5 mx-4">
+
+  <section class="mt-10" id='Contact'>
     <div class="flex flex-col items-center">
       <p>Reach Me @</p>
       <div class="mt-1 flex flex-row justify-center items-center">

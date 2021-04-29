@@ -13,7 +13,7 @@ export class NavbarComponent implements OnInit {
   publicItems: Array<[string, string]> = [
     ['Home', '/'],
     ['Info', '/#Info'],
-    ['Projects', '/#Projects'],
+    ['Fun', '/#Fun'],
     ['Contact', '/#Contact']
   ];
 
