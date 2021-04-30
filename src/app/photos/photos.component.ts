@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PhotoService } from '../photo.service';
 
 @Component({
   selector: 'app-photos',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PhotosComponent implements OnInit {
 
-  constructor() { }
+  photoRoot: string = '../../assets/photo/';
+  listOfPhotos: Array<string> = [];
+  largePrint: string;
+
+  constructor(private photo: PhotoService) { 
+    this.listOfPhotos = photo.listOfPhotos();
+    this.largePrint = this.listOfPhotos[1];
+  }
 
   ngOnInit(): void {
+  }
+
+  setLargePrint(p: string) {
+    this.largePrint = p;
   }
 
 }

@@ -1,1 +1,13 @@
-<p>photos page in construction!</p>
+<div class="flex flex-col justify-evenly items-center">
+  <div class="font-mono font-bold my-4">
+    Berkeley CA
+  </div>
+  <div class="hidden sm:flex">
+    <img src="{{photoRoot}}/{{largePrint}}">
+  </div>
+  <div class="sm:bg-black p-4 flex flex-col items-center space-y-6 sm:space-y-0 sm:space-x-4 sm:flex-row sm:items-center sm:justify-evenly">
+    <a *ngFor='let photo of listOfPhotos'>
+      <img (click)='setLargePrint(photo)' src="{{photoRoot}}/{{photo}}">
+    </a>
+  </div>
+</div>
