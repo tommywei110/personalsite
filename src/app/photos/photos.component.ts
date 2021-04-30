@@ -9,19 +9,21 @@ import { PhotoService } from '../photo.service';
 export class PhotosComponent implements OnInit {
 
   photoRoot: string = '../../assets/photo/';
-  listOfPhotos: Array<string> = [];
-  largePrint: string;
+  listOfPhotoUrls: Array<string> = [];
+  largePrintUrl: string = '';
 
-  constructor(private photo: PhotoService) { 
-    this.listOfPhotos = photo.listOfPhotos();
-    this.largePrint = this.listOfPhotos[1];
+  constructor(private photo: PhotoService) {
   }
 
   ngOnInit(): void {
+    this.photo.listOfPhotos().subscribe( photoNames => {
+      this.listOfPhotoUrls = photoNames.map( name => this.photo.constructUrlWithPhotoName(name));
+      this.largePrintUrl = this.listOfPhotoUrls.length ? this.listOfPhotoUrls[0] : '';
+    })
   }
 
   setLargePrint(p: string) {
-    this.largePrint = p;
+    this.largePrintUrl = p;
   }
 
 }

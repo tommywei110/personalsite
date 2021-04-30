@@ -5,7 +5,7 @@ import { RootComponent } from './root/root.component';
 
 const routes: Routes = [
   { path: '', component: RootComponent },
-  { path: 'photos', component: PhotosComponent }
+  { path: 'photo-gallery', component: PhotosComponent }
 ];
 
 @NgModule({

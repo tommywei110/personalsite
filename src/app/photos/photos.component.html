@@ -3,11 +3,11 @@
     Berkeley CA
   </div>
   <div class="hidden sm:flex">
-    <img src="{{photoRoot}}/{{largePrint}}">
+    <img src="{{largePrintUrl}}">
   </div>
   <div class="sm:bg-black p-4 flex flex-col items-center space-y-6 sm:space-y-0 sm:space-x-4 sm:flex-row sm:items-center sm:justify-evenly">
-    <a *ngFor='let photo of listOfPhotos'>
-      <img (click)='setLargePrint(photo)' src="{{photoRoot}}/{{photo}}">
+    <a *ngFor='let photoUrl of listOfPhotoUrls'>
+      <img (click)='setLargePrint(photoUrl)' src="{{photoUrl}}">
     </a>
   </div>
 </div>

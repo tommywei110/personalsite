@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "ng serve --proxy-config proxy.config.json",
-    "start": "node server/app",
+    "start": "nodemon server/app",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
