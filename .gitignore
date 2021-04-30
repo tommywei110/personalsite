@@ -4,6 +4,8 @@
 /dist
 /tmp
 /out-tsc
+# temp solution, jut because the photos are too big
+/src/assets/photo
 
 # dependencies
 /node_modules
