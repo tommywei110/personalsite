@@ -5,7 +5,9 @@ const app = express();
 
 app.use(express.json())
 
-app.use(express.static(path.join(__dirname, '..', 'dist')))
+const angularDir = path.join(__dirname, '..', 'dist', 'my-app');
+
+app.use(express.static(angularDir));
 
 app.use('/api', require('./api'))
 
