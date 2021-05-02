@@ -1,4 +1,5 @@
 <div class="flex flex-col items-center mt-4 text-lg">
+  <!-- Info section -->
   <section id='Info'>
     <div class="flex flex-col justify-center items-center sm:flex-row sm:space-x-10">
       <img class="w-3/4 max-w-sm" src="{{assetRoot}}/root/me.png">
@@ -17,9 +18,31 @@
       </div>
     </div>
   </section>
-
   <hr class="mt-10 w-4/5 mx-4">
-  
+
+  <!-- Blog Section -->
+  <section id="Blog">
+    <div class="flex flex-col items-center sm:flex-row sm:gap-x-8">
+      <div class='my-4 font-extrabold text-2xl sm:my-0'>
+        <a routerLink='blog-index'><u>Blog<span>&#8594;</span></u></a>
+      </div>
+      <div class="flex flex-col gap-y-2 rounded-3xl shadow-xl p-8 max-w-xs sm:max-w-md md:max-w-lg">
+        <div class="flex flex-row justify-around items-center">
+          <div class="text-gray-400">Latest Post</div>
+          <div class="flex flex-col">
+            <div class="italic font-bold text-center"><a [routerLink]="['blog', latestPost.id]">{{latestPost.title}}</a></div>
+            <div class="text-right font-thin text-sm">{{latestPost.date}}</div>
+          </div>
+        </div>
+        <div class="text-center">
+          {{latestPost.body}} ... <a [routerLink]="['blog', latestPost.id]"><u>Read More</u></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="mt-10 w-4/5 mx-4">
+
+  <!-- Fun Section -->
   <section class="mt-10" id='Fun'>
     <div class="flex items-center justify-center">
       <div class="grid grid-cols-1 gap-8 place-content-evenly sm:grid-cols-2">
@@ -235,5 +258,4 @@
       </div>
     </div>
   </section>
-  <hr class="mt-10 w-4/5 mx-4">
   </div>
