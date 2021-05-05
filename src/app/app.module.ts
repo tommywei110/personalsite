@@ -4,13 +4,13 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RootComponent } from './root/root.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { PhotosComponent } from './photos/photos.component';
-import { FooterComponent } from './footer/footer.component';
-import { BlogIndexComponent } from './blog-index/blog-index.component';
-import { BlogPostComponent } from './blog-post/blog-post.component';
-import { FourofourComponent } from './fourofour/fourofour.component';
+import { RootComponent } from './components/root/root.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { PhotosComponent } from './components/photos/photos.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { BlogIndexComponent } from './components/blog-index/blog-index.component';
+import { BlogPostComponent } from './components/blog-post/blog-post.component';
+import { FourofourComponent } from './components/fourofour/fourofour.component';
 
 @NgModule({
   declarations: [

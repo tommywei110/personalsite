@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BlogIndexComponent } from './blog-index/blog-index.component';
-import { BlogPostComponent } from './blog-post/blog-post.component';
-import { FourofourComponent } from './fourofour/fourofour.component';
-import { PhotosComponent } from './photos/photos.component';
-import { RootComponent } from './root/root.component';
+import { BlogIndexComponent } from './components/blog-index/blog-index.component';
+import { BlogPostComponent } from './components/blog-post/blog-post.component';
+import { FourofourComponent } from './components/fourofour/fourofour.component';
+import { PhotosComponent } from './components/photos/photos.component';
+import { RootComponent } from './components/root/root.component';
 
 const routes: Routes = [
   { path: '', component: RootComponent },

@@ -1,5 +1,16 @@
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
+const mongoose = require('mongoose');
+
+if (!process.env.MONGODB_ATLAS_PW) {
+  throw new Error('No MONGODB_ATLAS_PW found in ENV');
+}
+
+mongoose.connect('mongodb+srv://tommywei110:'+process.env.MONGODB_ATLAS_PW + '@personalsite.afi33.mongodb.net/PersonalSite?retryWrites=true&w=majority', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
 
 const app = express();
 

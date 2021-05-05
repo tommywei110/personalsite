@@ -1,6 +1,7 @@
 export interface BlogPost {
-  id: string,
+  _id: string,
   title: string,
   body: string,
-  date: string
+  date: string,
+  author: string
 }

@@ -1,5 +1,4 @@
 import { HttpClient } from '@angular/common/http';
-import { NONE_TYPE } from '@angular/compiler';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -15,7 +14,7 @@ export class PhotoService {
   constructor(private http: HttpClient) { }
 
   listOfPhotos(): Observable<photoNames> {
-    return this.http.get<photoNames>(`api/photos`);
+    return this.http.get<photoNames>('api/photos');
   }
 
   constructUrlWithPhotoName(name: string) {

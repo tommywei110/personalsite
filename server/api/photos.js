@@ -14,6 +14,7 @@ const listOfPhotos = new Promise((resolve, reject) => {
 // this should return a list of photo names in 
 router.get('/', (req, res) => { 
   listOfPhotos.then(files => {
+    console.log('Requested List Of Photo Names.')
     res.send(files);
   })
 });
